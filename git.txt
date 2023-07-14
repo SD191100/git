@@ -24,7 +24,6 @@
 
 ### process
 
-
     Step 1: Set up github account
 
         - Open the command prompt (or terminal on macOS/Linux).
