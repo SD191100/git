@@ -1,0 +1,55 @@
+### setup
+1. sudo apt install git.
+2. create a dir for the project
+3. create files or create any app(react, or any other).
+4. (cmd)git config --global user.name "<username(github)>"
+5. (cmd)git config --global user.email "<email(github)>"
+
+### commands(for changes and logs)
+1. git init - starts services
+2. git add (filename or .) - adds files to staging area
+3. git commit (-a -m "<msg>" or -m "<msg>") - commit creation, -a adds the changed files automatically so no need to git add again and again.
+4. git status - show if changes are there
+5. git log (--oneline) - show all commits, oneline shortens the output.
+6. git show <commit hash> - shows specif changes in that commit
+
+### commands(for branching)
+1. git branch - shows all branches
+2. git branch <new branch name> - creates new branch.
+3. git checkout <branch to enter> - branch changes to the mentioned branch.
+4. git merge <branch to merge> - merges the mentioned branch to the current branch.
+5. git branch -d <branch to delete> - deletes the mentioned branch.
+
+
+
+### process
+
+
+    Step 1: Set up github account
+
+        - Open the command prompt (or terminal on macOS/Linux).
+        - Configure your username using the following command: git config --global user.name "Your Name"
+        - Configure your email address using the following command: git config --global user.email "your@email.com"
+
+    Step 2: Create a new repository or clone an existing repository
+
+        - To create a new repository, navigate to the desired directory and run: git init
+        - To clone an existing repository, use the following command: git clone <repository_url>
+
+    Step 3: Add and commit changes
+
+        - Make changes to the files in your repository.
+        - Use the "git status" command to view the changes: git status
+        - Add the changed files to the staging area using the following command: git add <file_name> (or use "git add ." to add all files)
+        - Commit the changes with a meaningful message: git commit -m "Your commit message"
+
+    Step 4: Push and pull changes to/from remote repository
+
+        - If you have cloned an existing repository, you can pull the latest changes using: git pull
+        - Push your commits to the remote repository using: git push
+
+    Step 5: Working with branches
+
+        - Create a new branch using: git branch <branch_name>
+        - Switch to the new branch using: git checkout <branch_name>
+        - Merge a branch into another branch using: git merge <branch_name>
