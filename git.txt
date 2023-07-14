@@ -30,6 +30,9 @@
         - Open the command prompt (or terminal on macOS/Linux).
         - Configure your username using the following command: git config --global user.name "Your Name"
         - Configure your email address using the following command: git config --global user.email "your@email.com"
+        - To use ssh first generate ssh key using: ssh-keygen -t rsa -b 4096 -C "ur email"
+        - Then add the ssh key to github account.
+        - To check if ssh is working use: ssh -T git@github.com
 
     Step 2: Create a new repository or clone an existing repository
 
@@ -42,14 +45,16 @@
         - Use the "git status" command to view the changes: git status
         - Add the changed files to the staging area using the following command: git add <file_name> (or use "git add ." to add all files)
         - Commit the changes with a meaningful message: git commit -m "Your commit message"
-
-    Step 4: Push and pull changes to/from remote repository
-
-        - If you have cloned an existing repository, you can pull the latest changes using: git pull
-        - Push your commits to the remote repository using: git push
-
-    Step 5: Working with branches
+    
+    Step 4: Working with branches
 
         - Create a new branch using: git branch <branch_name>
         - Switch to the new branch using: git checkout <branch_name>
         - Merge a branch into another branch using: git merge <branch_name>
+
+    Step 5: Save repository to github
+
+        - Create a new repository on github.
+        - Add the remote repository url to your local repository using: git remote add origin git@github.com:<username>/<repository>.git
+        - Push your commits to the remote repository using: git push -u origin <branch_name>.
+
