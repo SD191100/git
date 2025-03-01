@@ -6,7 +6,7 @@
 5. (cmd)git config --global user.email "<email(github)>"
 
 ### commands(for changes and logs)
-1. git init - starts services
+1. git init - starts services ### git init --bare if youre on git server
 2. git add (filename or .) - adds files to staging area
 3. git commit (-a -m "<msg>" or -m "<msg>") - commit creation, -a adds the changed files automatically so no need to git add again and again.
 4. git status - show if changes are there
