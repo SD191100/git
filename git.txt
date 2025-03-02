@@ -55,5 +55,5 @@
 
         - Create a new repository on github.
         - Add the remote repository url to your local repository using: git remote add origin git@github.com:<username>/<repository>.git
-        - Push your commits to the remote repository using: git push -u origin <branch_name>.
+        - Push your commits to the remote repository using: git push -u origin <branch_name>. ### default is main
 
